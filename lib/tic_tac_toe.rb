@@ -87,11 +87,11 @@ def winner
   end
 end
 
-def play(board)
-  while !over?(board)
-    turn(board)
+def play
+  while !over?
+    turn
   end
-  if won?(board)
+  if won?
     puts "Congratulations #{winner(board)}!"
   elsif
     puts "Cat's Game!"
