@@ -69,16 +69,16 @@ def won?(board)
   end
 end
 
-def full?(board)
-  board.all?{|token| token == "X" || token == "O"}
+def full?
+  @board.all?{|token| token == "X" || token == "O"}
 end
 
-def draw?(board)
-  full?(board) && !won?(board)
+def draw?
+  full? && !won?
 end
 
-def over?(board)
-  won?(board) || draw?(board)
+def over?
+  won?|| draw?
 end
 
 def winner(board)
