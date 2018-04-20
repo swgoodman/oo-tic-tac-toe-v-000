@@ -78,12 +78,12 @@ def draw?
 end
 
 def over?
-  won?|| draw?
+  won? || draw?
 end
 
-def winner(board)
-  if winning_combo = won?(board)
-    board[winning_combo.first]
+def winner
+  if winning_combo = won?
+    @board[winning_combo.first]
   end
 end
 
