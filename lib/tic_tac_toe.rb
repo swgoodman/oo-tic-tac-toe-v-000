@@ -98,9 +98,6 @@ def play
   end
 end
 
-def play
-  @play
-end
 
 
 end
